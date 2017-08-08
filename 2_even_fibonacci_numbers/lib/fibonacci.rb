@@ -15,4 +15,8 @@ class Fibonacci
     end
     fibonacci_array
   end
+
+  def sum_of_even_numbers_in(fibonacci_array)
+    (fibonacci_array.select { |value| value.even? }).sum
+  end
 end
