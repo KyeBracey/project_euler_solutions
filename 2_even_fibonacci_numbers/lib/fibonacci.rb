@@ -20,3 +20,6 @@ class Fibonacci
     (fibonacci_array.select { |value| value.even? }).sum
   end
 end
+
+f = Fibonacci.new
+puts f.sum_of_even_numbers_in(f.generate_sequence_up_to(4000000))
